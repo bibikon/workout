@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kettlebell Workout Suggester</title>
+    <title>Workout Suggestion</title>
 </head>
 <body>
-    <h1>Kettlebell Workout Suggester</h1>
+    <h1>Workout Suggestion</h1>
     <form action="/suggest_workout" method="post">
-        <label for="workout_level">Workout Level:</label>
-        <input type="text" id="workout_level" name="workout_level" required><br>
+        <label for="body_part">Select Body Part:</label>
+        <select name="body_part" id="body_part">
+            <option value="upper">Upper Body</option>
+            <option value="lower">Lower Body</option>
+            <option value="whole">Whole Body</option>
+        </select>
+        <br>
 
-        <label for="body_part">Body Part:</label>
-        <input type="text" id="body_part" name="body_part" required><br>
+        <label for="equipment">Select Equipment:</label>
+        <select name="equipment" id="equipment">
+            <option value="kettlebell">Kettlebell</option>
+            <option value="body_weight">Body Weight</option>
+            <!-- Add other equipment options as needed -->
+        </select>
+        <br>
 
-        <label for="max_press_10_reps">Max Press for 10 Reps:</label>
-        <input type="number" id="max_press_10_reps" name="max_press_10_reps" required><br>
+        <label for="workout_level">Select Workout Level:</label>
+        <select name="workout_level" id="workout_level">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+        <br>
 
-        <button type="submit">Get Workout Suggestion</button>
+        <button type="submit">Get Suggested Workout</button>
     </form>
 </body>
 </html>
+
