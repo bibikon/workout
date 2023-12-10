@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kettlebell Workout Suggester</title>
+</head>
+<body>
+    <h1>Kettlebell Workout Suggester</h1>
+    <form action="/suggest_workout" method="post">
+        <label for="workout_level">Workout Level:</label>
+        <input type="text" id="workout_level" name="workout_level" required><br>
+
+        <label for="body_part">Body Part:</label>
+        <input type="text" id="body_part" name="body_part" required><br>
+
+        <label for="max_press_10_reps">Max Press for 10 Reps:</label>
+        <input type="number" id="max_press_10_reps" name="max_press_10_reps" required><br>
+
+        <button type="submit">Get Workout Suggestion</button>
+    </form>
+</body>
+</html>
